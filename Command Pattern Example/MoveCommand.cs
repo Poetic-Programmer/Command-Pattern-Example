@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Command_Pattern_Example
 {
-    public class MoveCommand : GameControlCommand
+    public class MoveCommand : Command
     {
         private Move move;
         public MoveCommand(Move move)

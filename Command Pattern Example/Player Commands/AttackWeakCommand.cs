@@ -4,17 +4,18 @@ using System.Text;
 
 namespace Command_Pattern_Example
 {
-    public class AttackStrongCommand : GameControlCommand
+    public class AttackWeakCommand : Command
     {
         Attack attack;
-        public AttackStrongCommand(Attack attack)
+
+        public AttackWeakCommand(Attack attack, Command command = null)
         {
             this.attack = attack;
         }
 
         public override void Execute()
         {
-            attack.Strong();
+            attack.Weak();
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Command_Pattern_Example
 {
-    public abstract class GameControlCommand
+    public abstract class Command
     {
         public abstract void Execute();
     }

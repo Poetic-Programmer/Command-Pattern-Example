@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Command_Pattern_Example
 {
-    public class NoCommand : GameControlCommand
+    public class NoCommand : Command
     {
         public NoCommand()
         {

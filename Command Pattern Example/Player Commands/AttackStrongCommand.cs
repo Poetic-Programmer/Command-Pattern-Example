@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Command_Pattern_Example
 {
-    class JumpLowCommand : GameControlCommand
+    public class AttackStrongCommand : Command
     {
-        Jump jump;
-        public JumpLowCommand(Jump jump)
+        Attack attack;
+        public AttackStrongCommand(Attack attack)
         {
-            this.jump = jump;
+            this.attack = attack;
         }
 
         public override void Execute()
         {
-            jump.Low();
+            attack.Strong();
         }
     }
 }
